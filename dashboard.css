@@ -1,9 +1,9 @@
-/* Base */
+
 :root {
   --bg: #0f1112;
   --text: #e7edf2;
   --muted: #b9c4ce;
-  --teal: #0a83a4; /* header */
+  --teal: #0a83a4;
   --teal-dark: #056b86;
   --panel: #1a1f23;
   --border: #2a3036;
@@ -21,7 +21,7 @@ body {
     "Noto Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Topbar */
+
 .topbar {
   display: flex;
   align-items: center;
@@ -79,14 +79,14 @@ body {
   background: rgba(255,255,255,.05); 
 }
 
-/* Esconder o checkbox que controla o submenu */
+
 .menu-toggle {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Menu item com submenu */
+
 .menu-item-with-submenu > label::after {
   content: '>';
   float: right;
@@ -95,7 +95,7 @@ body {
   transition: transform 0.2s ease;
 }
 
-/* Estilo hover para item com submenu */
+
 .menu-item-with-submenu > label:hover {
   background: rgba(255,255,255,.1);
   color: #ff8c42;
@@ -112,7 +112,7 @@ body {
   background: #ff8c42;
 }
 
-/* Submenu (abre ao clicar no item, via checkbox) */
+
 .submenu {
   display: none;
   list-style: none;
@@ -169,7 +169,7 @@ body {
 .panel .empty { color: var(--muted); font-size: 14px; }
 .panel.wide { grid-column: 1 / -1; }
 
-/* Payments table */
+
 .payments .entity { font-size: 13px; margin-bottom: 8px; color: var(--muted); }
 .table-wrap { overflow: auto; border: 1px solid var(--border); border-radius: 4px; }
 .table { width: 100%; border-collapse: collapse; min-width: 640px; }
@@ -177,12 +177,11 @@ body {
 .table thead th { background: #0d1215; text-align: left; }
 .table tbody tr:nth-child(odd) td { background: #161b20; }
 
-/* Notices */
 .notices { margin: 12px; padding-left: 18px; color: var(--muted); }
 .notices a { color: var(--link); text-decoration: none; }
 .notices a:hover { text-decoration: underline; }
 
-/* Footer */
+
 .footer {
   display: flex; justify-content: space-between; align-items: center;
   gap: 10px; padding: 10px 16px; border-top: 1px solid var(--border);
@@ -191,7 +190,7 @@ body {
 .back { color: var(--link); text-decoration: none; }
 .back:hover { text-decoration: underline; }
 
-/* Footer Extended */
+
 .footer-extended {
   border-top: 1px solid var(--border);
   background: #0e1215;
